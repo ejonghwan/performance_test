@@ -1,0 +1,17 @@
+/* @import url('./pc.css');
+@import url('./mobile.css');
+@import url('./tablet.css'); */
+
+
+@media (max-width: 4000px) {
+    h1 {color: red; font-size: 30px;}
+}
+
+@media (max-width: 1000px) {
+    h1 {color: blue; font-size: 30px;}
+}
+
+@media (max-width: 480px) {
+    h1 {color: palegreen; font-size: 30px;}
+}
+

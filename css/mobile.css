@@ -1,0 +1,3 @@
+
+.main_wrap {width: 100%; }
+.card > li { background: rgb(195, 255, 205); width: calc(100%); margin: 5px;; flex: 1 1 auto; height: 300px;;}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+\
+    
+    <link rel="stylesheet" href="./css/media_test.css" media="print" onload="this.media='all'">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
+
+
+    <!-- 폰트 프리로드하면 왜 적용이 안될까 ... -->
+    <link rel="preload" href="../fonts/BMDoHyeon.woff2" type="font/woff2" as="font" crossorigin />
+
+    <!--  onload="this.onload=null; this.rel='stylesheet';"  -->
+    <link rel="preload" as="style" href="./css/reset.css" media="all"   >
+    <!-- <link rel="stylesheet" href="./css/reset.css" media="all"> -->
+
+
+    <link rel="stylesheet" href="./css/pc.css" media="(max-width: 4000px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="(max-width: 1000px)">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 480px)">
+    <!-- <link rel="stylesheet" href="./css/pc.css" media="all">
+    <link rel="stylesheet" href="./css/tablet.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./css/mobile.css" media="all"> -->
+
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css" media="all">
+    
+    
+    <title>Document</title> 
+</head>
+<body>
+
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        
+            <section class="top"> 
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="middle main_wrap">
+                <h1>미디어 테스트 <br />Subset 사용 (특정문자 몇개만  사용 할 때)
+                    만약 2글자만 웹폰트를 사용한다면 필요한 2글자만 자를 수 있음 </h1>
+                <ul class="card">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                </ul>
+            </section>
+            <section class="bottom main_wrap">
+                bottom
+            </section>
+        
+
+
+    </main>
+    <footer></footer>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/sub.js" defer></script>
+    
+
+</body>
+</html>
