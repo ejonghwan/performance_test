@@ -55,4 +55,5 @@ section { padding: 10px 0;}
 .card {display: flex; flex-wrap: wrap;}
 .card > li { background: rgb(222, 244, 255); width: calc(33.3333% - 10px); margin: 5px;; flex: 1 1 auto; height: 300px;;}
 .middle {border-bottom: 1px solid #ddd;height: 100%;;}
+.card img {width: 150px; height: 238px;;}
 /* h1 {font-family: 'BMDoHyeon';} */
