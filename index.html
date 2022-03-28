@@ -6,33 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    
-\
+    <!-- preload test -->
     <!-- <link rel="preload" href="http://placeimg.com/480/360/animals" as="image"> -->
     <link rel="stylesheet" href="./css/media_test.css" media="print" onload="this.media='all'">
+    <link rel="preload" as="style" href="./css/reset.css" >
+    <!-- <link rel="preload" as="style" href="./css/pc.css" > -->
 
    
-
-
     <link rel="preload" href="../fonts/BMDoHyeon.woff2" type="font/woff2" as="font" crossorigin />
 
+
+
+
    
 
-
-    <link rel="stylesheet" href="./css/pc.css" media="(max-width: 4000px)">
-    <link rel="stylesheet" href="./css/tablet.css" media="(max-width: 1000px)">
-    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 480px)">
+    <!-- media query test  -->
+    <link rel="stylesheet" href="./css/reset.css" media="all">
+    <link rel="stylesheet" href="./css/pc.css" media="all and (min-width: 1000px) and (max-width: 4000px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="all and (min-width: 481px) and (max-width: 1000px)">
+    <link rel="stylesheet" href="./css/mobile.css" media="all and (min-width: 0px) and (max-width: 480px)">
     <!-- <link rel="stylesheet" href="./css/pc.css" media="all">
     <link rel="stylesheet" href="./css/tablet.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="./css/mobile.css" media="all"> -->
 
+
+
+
+
+    <!-- preload test -->
      <!--  onload="this.onload=null; this.rel='stylesheet';"  -->
-     <link rel="preload" as="style" href="./css/reset.css" media="all" onload="this.onload=null; this.rel='stylesheet';">
+     <!-- <link rel="preload" as="style" href="./css/reset.css" media="all" onload="this.onload=null; this.rel='stylesheet';"> -->
      <!-- <link rel="stylesheet" href="./css/reset.css" media="all"> -->
 
     
 
-    
+     <!-- defer test -->
+     <script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css" media="all">
     
     
@@ -44,7 +53,7 @@
         <nav></nav>
     </header>
     <main>
-        
+            <div><a href="./sub.html">sub page</a></div>
             <section class="top"> 
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -146,10 +155,26 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js" defer></script>
     <script src="./js/index.js" defer></script>
     <script src="./js/sub.js" defer></script>
+
+
+
+    <script>
+
+        window.onload = function() {
+            const head = document.querySelector('head');
+            head.innerHTML += `<link rel="stylesheet" href="./css/media_query_test.css" />`
+
+
+            // reset.css preload 후 js로 붙이면 다운로드 밑 파싱은 맨 처음에 하는 것으로 나오지만 맨 마지막꺼에 적용 
+            // head.innerHTML += `<link rel="stylesheet" href="./css/reset.css" />`
+            
+        }
+
+    </script>
     
 
 </body>

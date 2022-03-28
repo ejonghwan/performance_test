@@ -9,7 +9,7 @@ body {
       body {
         font-family: 'BMKIRANGHAERANG', 'BMDoHyeon', Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
-        color: rgb(0, 0, 0);
+        /* color: rgb(0, 0, 0); */
         margin: 0;
         padding: 0;
       }
@@ -57,3 +57,4 @@ section { padding: 10px 0;}
 .middle {border-bottom: 1px solid #ddd;height: 100%;;}
 .card img {width: 150px; height: 238px;;}
 /* h1 {font-family: 'BMDoHyeon';} */
+h1 {color: blue;}
