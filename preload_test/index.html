@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- preload test -->
+    <!-- <link rel="preload" href="http://placeimg.com/480/360/animals" as="image"> -->
+    <link rel="stylesheet" href="./css/media_test.css" media="print" onload="this.media='all'">
+    <link rel="preload" as="style" href="./css/reset.css" >
+    <!-- <link rel="preload" as="style" href="./css/pc.css" > -->
+
+   
+    <link rel="preload" href="../fonts/BMDoHyeon.woff2" type="font/woff2" as="font" crossorigin />
+
+
+
+
+   
+
+    <!-- media query test  -->
+    
+    <link rel="stylesheet" href="./css/pc.css" media="all and (min-width: 1000px) and (max-width: 4000px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="all and (min-width: 481px) and (max-width: 1000px)">
+    <link rel="stylesheet" href="./css/mobile.css" media="all and (min-width: 0px) and (max-width: 480px)">
+    <!-- <link rel="stylesheet" href="./css/pc.css" media="all">
+    <link rel="stylesheet" href="./css/tablet.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./css/mobile.css" media="all"> -->
+
+
+
+
+
+    <!-- preload test -->
+     <!--  onload="this.onload=null; this.rel='stylesheet';"  -->
+     <!-- <link rel="preload" as="style" href="./css/reset.css" media="all" onload="this.onload=null; this.rel='stylesheet';"> -->
+     <!-- <link rel="stylesheet" href="./css/reset.css" media="all"> -->
+
+    
+
+     <!-- defer test -->
+     <!-- <script src="https://code.jquery.com/jquery-latest.min.js" defer></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css" media="all"> -->
+    
+    <link rel="stylesheet" href="./css/reset.css" media="all">
+    <title>Document</title> 
+</head>
+<body>
+
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+            <div><a href="../sub.html">sub page</a></div>
+            <section class="top"> 
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="middle main_wrap">
+                <h1>미디어 테스트 <br />Subset 사용 (특정문자 몇개만  사용 할 때)
+                    만약 2글자만 웹폰트를 사용한다면 필요한 2글자만 자를 수 있음 </h1>
+                    <div>
+                        <img src="http://placeimg.com/480/360/animals" />
+                    </div>
+                <ul class="card">
+                    <li>
+                        <img src="../images/card1.gif" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/card2.gif" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/card3.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/card4.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/card5.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/card1.gif" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/card2.gif" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/card3.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/card4.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/card5.png" alt="">
+                    </li>
+                </ul>
+            </section>
+            <section class="bottom main_wrap">
+                bottom
+            </section>
+            <div>
+                <img src="http://placeimg.com/480/360/any" loading="lazy"/>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div>
+                <img src="http://placeimg.com/480/360/grayscale" loading="lazy"/>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div>
+                <img src="http://placeimg.com/480/360/sepia" loading="lazy"/>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div>
+                <img src="http://placeimg.com/480/360/people" loading="lazy"/>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div>
+                <img src="http://placeimg.com/480/360/arch" loading="lazy"/>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div>
+                <img src="http://placeimg.com/480/360/grayscale" loading="lazy"/>
+            </div>
+            <br />
+            <br />
+            <br />
+
+
+    </main>
+    <footer></footer>
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/sub.js" defer></script>
+
+
+
+    <script>
+
+        window.onload = function() {
+            const head = document.querySelector('head');
+            head.innerHTML += `<link rel="stylesheet" href="./css/media_query_test.css" />`
+
+
+            // reset.css preload 후 js로 붙이면 다운로드 밑 파싱은 맨 처음에 하는 것으로 나오지만 맨 마지막꺼에 적용 
+            // head.innerHTML += `<link rel="stylesheet" href="./css/reset.css" />`
+            
+        }
+
+    </script>
+    
+
+</body>
+</html>
