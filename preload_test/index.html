@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <style>
+        .hoho11 {width: 100%; height: 360px;}
+    </style>
 
     <!-- preload test -->
     <!-- <link rel="preload" href="http://placeimg.com/480/360/animals" as="image"> -->
@@ -15,10 +17,6 @@
    
     <link rel="preload" href="../fonts/BMDoHyeon.woff2" type="font/woff2" as="font" crossorigin />
 
-
-
-
-   
 
     <!-- media query test  -->
     <link rel="stylesheet" href="./css/reset.css" media="all">
@@ -41,8 +39,8 @@
     
 
      <!-- defer test -->
-     <!-- <script src="https://code.jquery.com/jquery-latest.min.js" defer></script> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css" media="all"> -->
+     <script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css" media="all">
     
     
     <title>Document</title> 
@@ -53,6 +51,7 @@
         <nav></nav>
     </header>
     <main>
+        <h1>캐시 0</h1>
             <div><a href="../sub.html">sub page</a></div>
             <section class="top"> 
                 <div class="swiper mySwiper">
@@ -74,7 +73,7 @@
                 <h1>미디어 테스트 <br />Subset 사용 (특정문자 몇개만  사용 할 때)
                     만약 2글자만 웹폰트를 사용한다면 필요한 2글자만 자를 수 있음 </h1>
                     <div>
-                        <img src="http://placeimg.com/480/360/animals" />
+                        <img src="http://placeimg.com/480/360/animals" class="hoho11"/>
                     </div>
                 <ul class="card">
                     <li>
@@ -157,8 +156,8 @@
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js" defer></script>
-    <script src="./js/index.js" defer></script>
-    <script src="./js/sub.js" defer></script>
+    <script src="../js/index.js" defer></script>
+    <script src="../js/sub.js" defer></script>
 
 
 
