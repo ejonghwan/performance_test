@@ -1,4 +1,4 @@
-(function(){
+(function() {
 
     console.log(11)
     var swiper = new Swiper(".mySwiper", {

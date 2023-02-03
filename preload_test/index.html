@@ -19,10 +19,30 @@
 
 
     <!-- media query test  -->
-    <link rel="stylesheet" href="./css/reset.css" media="all">
-    <link rel="stylesheet" href="./css/pc.css" media="all and (min-width: 1000px) and (max-width: 4000px)">
-    <link rel="stylesheet" href="./css/tablet.css" media="all and (min-width: 481px) and (max-width: 1000px)">
-    <link rel="stylesheet" href="./css/mobile.css" media="all and (min-width: 0px) and (max-width: 480px)">
+<!-- ex1) 
+모바일로 접속했을 때 html parse 하면서 mobile.css 파일만 받음. 
+html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처리. -->
+    <!-- <link rel="stylesheet" href="./css/reset.css" media="all"> -->
+    <!-- <link rel="stylesheet" href="./css/pc.css" media="all and (min-width: 1000px) and (max-width: 4000px)"> -->
+    <!-- <link rel="stylesheet" href="./css/tablet.css" media="all and (min-width: 481px) and (max-width: 1000px)"> -->
+    <!-- <link rel="stylesheet" href="./css/mobile.css" media="all and (min-width: 0px) and (max-width: 480px)"> -->
+<!-- ex1) 
+모바일로 접속했을 때 html parse 하면서 mobile.css 파일만 받음. 
+html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처리. -->
+
+
+<!-- ex2) 
+필요한 디바이스꺼만 받고 나머지 print 설정 후  this.media로 조절하고 싶은데 방법ㅇ ㅣ없나 ..?  스크립트 없이  -->
+<link rel="stylesheet" href="./css/reset.css" media="all">
+<link rel="stylesheet" href="./css/pc.css" media="all and (min-width: 1000px) and (max-width: 4000px)">
+<link rel="stylesheet" href="./css/tablet.css" media="all and (min-width: 481px) and (max-width: 1000px)">
+<link rel="stylesheet" href="./css/mobile.css" media="all and (min-width: 0px) and (max-width: 480px)">
+<!-- ex2) 
+ -->
+
+
+
+
     <!-- <link rel="stylesheet" href="./css/pc.css" media="all">
     <link rel="stylesheet" href="./css/tablet.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="./css/mobile.css" media="all"> -->
