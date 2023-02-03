@@ -44,10 +44,37 @@
      <script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css" media="all">
     
-    
+    <style>
+        * {padding: 0; margin: 0; box-sizing: border-box;}
+        html, body {width: 100%; height: 100%;}
+        img {width: 100%;;}
+        .ovhTest {display: flex; overflow: hidden; overflow-x: scroll; margin: 10px;;}
+        .ovhTest > li {flex: 0 0 auto; width: 250px; border: 1px solid #ddd; padding: 10px;}
+        .ovhTest > li + li {margin-left: 10px;}
+        
+        .ovhTest.scrolling {-webkit-overflow-scrolling: touch;}
+    </style>
     <title>Document</title> 
 </head>
 <body>
+
+    scrolling 안붙인거 
+    <ul class="ovhTest">
+        <li class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, facere magni pariatur, recusandae fugit cupiditate qui facilis hic temporibus modi libero voluptatem consequatur necessitatibus atque eaque perspiciatis deserunt dignissimos? Ducimus.</li>
+        <li class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, facere magni pariatur, recusandae fugit cupiditate qui facilis hic temporibus modi libero voluptatem consequatur necessitatibus atque eaque perspiciatis deserunt dignissimos? Ducimus.</li>
+        <li class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, facere magni pariatur, recusandae fugit cupiditate qui facilis hic temporibus modi libero voluptatem consequatur necessitatibus atque eaque perspiciatis deserunt dignissimos? Ducimus.</li>
+        <li class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, facere magni pariatur, recusandae fugit cupiditate qui facilis hic temporibus modi libero voluptatem consequatur necessitatibus atque eaque perspiciatis deserunt dignissimos? Ducimus.</li>
+        <li class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, facere magni pariatur, recusandae fugit cupiditate qui facilis hic temporibus modi libero voluptatem consequatur necessitatibus atque eaque perspiciatis deserunt dignissimos? Ducimus.</li>
+    </ul>
+
+    scrolling 붙인거 
+    <ul class="ovhTest scrolling">
+        <li class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, facere magni pariatur, recusandae fugit cupiditate qui facilis hic temporibus modi libero voluptatem consequatur necessitatibus atque eaque perspiciatis deserunt dignissimos? Ducimus.</li>
+        <li class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, facere magni pariatur, recusandae fugit cupiditate qui facilis hic temporibus modi libero voluptatem consequatur necessitatibus atque eaque perspiciatis deserunt dignissimos? Ducimus.</li>
+        <li class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, facere magni pariatur, recusandae fugit cupiditate qui facilis hic temporibus modi libero voluptatem consequatur necessitatibus atque eaque perspiciatis deserunt dignissimos? Ducimus.</li>
+        <li class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, facere magni pariatur, recusandae fugit cupiditate qui facilis hic temporibus modi libero voluptatem consequatur necessitatibus atque eaque perspiciatis deserunt dignissimos? Ducimus.</li>
+        <li class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, facere magni pariatur, recusandae fugit cupiditate qui facilis hic temporibus modi libero voluptatem consequatur necessitatibus atque eaque perspiciatis deserunt dignissimos? Ducimus.</li>
+    </ul>
 
     <header>
         <nav></nav>
