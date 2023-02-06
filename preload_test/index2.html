@@ -14,7 +14,7 @@
     <link rel="preload" as="style" href="./css/reset.css" >
     <!-- <link rel="preload" as="style" href="./css/pc.css" > -->
 
-    <link rel="prefetch" href="./dx-com.css" as="style">
+   
     <link rel="preload" href="../fonts/BMDoHyeon.woff2" type="font/woff2" as="font" crossorigin />
 
 
@@ -40,6 +40,8 @@ html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처�
 <!-- ex2) 
  -->
 
+
+ <link rel="stylesheet" href="./dx-com.css">
 
 
 
@@ -71,7 +73,7 @@ html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처�
         <nav></nav>
     </header>
     <main>
-        <h1>캐시 3</h1>
+        <h1>캐시 2</h1>
         <a href="https://wwwnaver.com" title="네이버로 새창 이동" target="_blank">네이버</a>
         <a href="https://wwwnaver.com" aria-label="아리아 레이블" target="_blank">네이버</a>
         <a href="https://wwwnaver.com" aria-labelledby="아리아 레이블드바이" target="_blank">네이버</a>
@@ -213,15 +215,18 @@ html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처�
     </main>
     <footer></footer>
 
-    <a href="./index2.html">본창</a>
-    <a href="./index2.html" target="_blank">새창</a>
+    <div id="infoPage">
+        <div class="info-top">
+            <p class="c-txt1">#infoPage .info-top .c-txt1</p>
+        </div>
+    </div>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js" defer></script>
     <script src="../js/index.js" defer></script>
     <script src="../js/sub.js" defer></script>
 
-
+    
 
     <script>
 
