@@ -5,14 +5,38 @@
         pagination: {
           el: ".swiper-pagination",
         },
-        autoplay: {
-          delay: 100,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+          // delay: 900,
+          // disableOnInteraction: false,
+        // },
+        on: {
+          init: function() {
+            this.slides.map(item => {
+              item.setAttribute('aria-hidden', true)
+              item.setAttribute('tabindex', '-1')
+              if(item.classList.contains('swiper-slide-active')) {
+                item.setAttribute('aria-hidden', false)
+                item.setAttribute('tabindex', '0')
+              }
+              // return false;
+            })
+          },
+          slideChangeTransitionStart: function() {
+            let target = null;
+            this.slides.map(item => {
+              item.setAttribute('aria-hidden', true)
+              item.setAttribute('tabindex', '-1')
+              if(item.classList.contains('swiper-slide-active')) {
+                item.setAttribute('aria-hidden', false)
+                item.setAttribute('tabindex', '0')
+              }
+              // return false;
+            })
+
+          }
+        }
       });
 
-      console.log(swiper)
-      
       $('.mySwiper').hover(function(){
         swiper.autoplay.stop();
       }, function(){
@@ -24,5 +48,12 @@
       }, function(){
         swiper.autoplay.start();
       });
+
+      document.querySelector('.stop11').addEventListener('click', e => {
+        swiper.autoplay.stop()
+      })
+      document.querySelector('.play11').addEventListener('click', e => {
+        swiper.autoplay.start()
+      })
 
 })()
