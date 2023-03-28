@@ -5,10 +5,10 @@
         pagination: {
           el: ".swiper-pagination",
         },
-        // autoplay: {
-          // delay: 900,
-          // disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 900,
+          disableOnInteraction: false,
+        },
         on: {
           init: function() {
             this.slides.map(item => {
