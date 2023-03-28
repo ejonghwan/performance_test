@@ -123,8 +123,8 @@ html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처�
                 </li>
             </ul>
             <div><a href="../sub.html">sub page</a></div>
-            <a href="">????????????????</a>
-                <button>??????????????</button>
+            <a href="" class="hohotest">????????????????</a>
+                <button>수정1</button>
             <section class="top"> 
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -140,6 +140,17 @@ html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처�
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
+
+                <script>
+                    let swich = false
+                    document.querySelector('.hohotest').addEventListener('focus', e => {
+                        if(!swich) {
+                            alert('hoho')
+                            swich = true
+                        } 
+                        
+                    })
+                </script>
                 
             </section>
             <section class="middle main_wrap">
