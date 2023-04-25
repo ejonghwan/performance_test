@@ -82,6 +82,17 @@ html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처�
     <div>
 
 
+        <p>입력될떄 변경</p>
+        <input type="number" id="inputtext">
+
+        <script>
+            let val = document.querySelector('#inputtext')
+            val.addEventListener('keydown', e => {
+                val.setAttribute('type', 'text')
+            })
+            // console.log(val)
+        </script>
+
         <p>input number test v2 이벤트에 정규식</p>
         <input type="text" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
 
