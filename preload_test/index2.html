@@ -82,12 +82,17 @@ html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처�
     <div>
 
 
+        <p>input tel test v1</p>
+        <input type="tel">
+
+
         <p>입력될떄 변경</p>
         <input type="number" id="inputtext">
 
         <script>
             let val = document.querySelector('#inputtext')
             val.addEventListener('keydown', e => {
+                
                 val.setAttribute('type', 'text')
             })
             // console.log(val)
