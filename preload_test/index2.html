@@ -81,6 +81,18 @@ html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처�
 
     <div>
 
+        <style>
+            #wrapaaa {background: url('../images/card1.gif') no-repeat 50% / 100% auto ; flex: 0 0 auto; position: relative; width: 32px; height: 24px; top: -1px; overflow: hidden;}
+            #aaa { display: block; text-indent: -9999px; height: 100%; width: 100%; }
+        </style>
+        <div>
+            <span>이미지에 롤텍스트</span>
+            <img src="../images/card1.gif" alt="" role="text">
+        </div>
+        <div id="wrapaaa">
+            <span>bg에 롤텍스트</span>
+            <span id="aaa" role="text">이 텍스트 읽히나</span>
+        </div>
 
         <ul role="text">
             <li>가나다</li>
@@ -126,7 +138,7 @@ html parse가 끝나는 시점에 나머지 pc.css, tablet.css 다운받고 처�
             <a href="">a임</a>
             <ul>
                 <li>li임</li>
-                <li>li2임</li>
+                < li>li2임</li>
             </ul>
             <ol>
                 <li>ol임</li>
